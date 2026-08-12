@@ -1,0 +1,40 @@
+{
+  "site": {
+    "school_name": "Al-Azan Educational Complex",
+    "tagline": "Character Building with Education",
+    "eyebrow": "A Grand Welfare Educational Project in South Punjab",
+    "about_title": "A welfare-based educational project in South Punjab",
+    "about_text": "Al-Azan Educational Complex is a grand welfare based educational project located in South Punjab, approximately two kilometers from the city of Alipur on Jatoi Road. A total area of twenty kanals has been allocated for this project, where construction is progressing in phases according to a comprehensive and well organized master plan.",
+    "about_text_2": "By the grace and blessings of Almighty Allah and through the beneficence of His Beloved Messenger, the first phase was completed within a remarkably short period of one year and three months. During this phase, the first building named “Umar bin Abdul Aziz (RA) Block” was constructed over an area of 15,571 square feet and is now fully operational for educational activities.",
+    "vision": "To contribute towards establishment of an exemplary society by nurturing the younger generation with balanced integration of religious and contemporary education.",
+    "mission": "Promotion and dissemination of religious sciences aligned with modern needs and advancements.\nCultivating capable, ethical and well-rounded individuals through high-quality education and comprehensive training.\nAddressing social issues, intellectual confusion, moral decline and rising intolerance through educational and ethical initiatives.\nStrengthening societal morals by promoting Islamic ethical values and principles.\nEmpowering underprivileged communities toward self-sufficiency and sustainable development.",
+    "objectives": "Revival and dissemination of the sciences of the Quran and Hadith.\nRectification of beliefs and understanding of fundamental jurisprudential rulings in light of authentic Islamic teachings and moral purification (tazkiyah).\nPromotion of the Islamic concept of moderation (wasatiyyah).\nEquipping individuals with essential life skills for personal and societal development.\nPreparing distinguished scholars and leaders capable of addressing future intellectual, academic and social challenges.",
+    "facilities": "Aesthetic, spacious & well-ventilated buildings\nWAPDA & solar electricity backup\nLarge, well-maintained playgrounds\nRobust CCTV security system\nEfficient parental communication\nScholarship programs\nHigh-quality hostel facilities\nTraining & character building programs\nFull-day education for non-residential students\nManaged cafeteria services",
+    "future_goals": "Establishment of a modern Computer Lab for basic Computer Science and Information Technology education.\nInstallation of CCTV cameras for effective security monitoring and campus safety.\nDevelopment of a Digital Language Lab for specialized Spoken English and Arabic training.\nEstablishment of a well-equipped library to promote research, reading and academic excellence.\nProvision of air-conditioned classrooms for a comfortable learning environment.\nDevelopment of an online portal enabling parents to monitor students’ academic performance and progress.",
+    "future_projects": "Virtual Academy · Al-Azan Grammar School · Islamic College · Dar-ul-Uloom of Islamic Studies · Proposed Islamic University",
+    "admission_title": "Admissions are open for Class 5 & 6 with Hifz-ul-Quran",
+    "admission_text": "Admissions are open only for Class 5 and 6 with Hifz-ul-Quran.\nAge limit: 9 to 11 years.\nB-Form is required as proof of age.",
+    "admission_link": "https://bit.ly/AlAzanAdmission",
+    "address": "Jatoi Road, 2 Kilometers from Alipur, District Muzaffargarh, Punjab, Pakistan.",
+    "email": "alazanedu786@gmail.com",
+    "phone": "+92 333 7436422",
+    "chairman_name": "Mufti Irshad Hussain Saeedi",
+    "chairman_role": "Founding Chairman",
+    "slogan": "Character building institution with religious and contemporary education",
+    "logo": "/assets/Logo Al Azan/Logo Al Azan-1.png",
+    "chairman_image": "/assets/chairman.jpg",
+    "building_image": "/assets/building.png"
+  },
+  "students": [],
+  "staff": [],
+  "classes": [],
+  "announcements": [],
+  "gallery": [],
+  "counters": {
+    "students": 1,
+    "staff": 1,
+    "classes": 1,
+    "announcements": 1,
+    "gallery": 1
+  }
+}

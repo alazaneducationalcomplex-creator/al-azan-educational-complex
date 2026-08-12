@@ -1,0 +1,17 @@
+{
+  "name": "al-azan-educational-complex",
+  "version": "1.1.0",
+  "private": true,
+  "description": "Professional bilingual school website and student management dashboard for Al-Azan Educational Complex (JSON storage; no native database build required).",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-session": "^1.18.1",
+    "multer": "^1.4.5-lts.1",
+    "twilio": "^5.3.7"
+  }
+}
