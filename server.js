@@ -49,7 +49,7 @@ app.use(session({ secret: process.env.SESSION_SECRET || 'change-this-secret', re
 app.use('/uploads', express.static(uploads));
 // Serve the supplied school assets (logo, chairman, building, brochure source images).
 app.use('/assets', express.static(path.join(ROOT,'assets')));
-app.use(express.static(path.join(ROOT,'public')));
+app.use(express.static(path.join(ROOT,'Public')));
 
 const storage=multer.diskStorage({destination:(_,__,cb)=>cb(null,uploads),filename:(_,file,cb)=>{const ext=path.extname(file.originalname).toLowerCase();cb(null,`${Date.now()}-${Math.random().toString(36).slice(2)}${ext}`)}});
 const upload=multer({storage,limits:{fileSize:5*1024*1024},fileFilter:(_,file,cb)=>cb(null,/^image\/(jpeg|png|webp)$/.test(file.mimetype))});
@@ -96,5 +96,5 @@ app.delete('/api/gallery/:id',auth,(req,res)=>{const i=store.gallery.findIndex(x
 
 app.post('/api/sms/bulk',auth,async(req,res)=>{const {message,studentIds,className}=req.body||{};if(!message)return res.status(400).json({error:'Message is required.'});if(!process.env.TWILIO_ACCOUNT_SID||!process.env.TWILIO_AUTH_TOKEN||!process.env.TWILIO_FROM_NUMBER)return res.status(503).json({error:'SMS is not configured. Add Twilio credentials to .env first.'});const twilio=require('twilio')(process.env.TWILIO_ACCOUNT_SID,process.env.TWILIO_AUTH_TOKEN);let rows;if(Array.isArray(studentIds)&&studentIds.length){rows=store.students.filter(s=>studentIds.map(String).includes(String(s.id))&&s.phone);}else if(className){rows=store.students.filter(s=>s.status==='Active'&&s.phone&&s.class_name===className);}else{rows=store.students.filter(s=>s.status==='Active'&&s.phone);}const results=[];for(const s of rows){try{const r=await twilio.messages.create({body:message,to:s.phone,from:process.env.TWILIO_FROM_NUMBER});results.push({id:s.id,ok:true,sid:r.sid});}catch(e){results.push({id:s.id,ok:false,error:e.message});}}res.json({ok:true,sent:results.filter(x=>x.ok).length,total:results.length,results});});
 
-app.get('*',(req,res)=>res.sendFile(path.join(ROOT,'public','index.html')));
+app.get('*',(req,res)=>res.sendFile(path.join(ROOT,'Public','index.html')));
 app.listen(PORT,()=>console.log(`Al-Azan website running on http://localhost:${PORT}`));
